@@ -79,7 +79,6 @@ html,body{
     left: 6em;
     width: 23em;
     font-size: 3em;
-    
 }
 .picWithCap{
     margin-top: 3em;
@@ -88,10 +87,9 @@ html,body{
     display: block;
 }
 .IntroHeader{
-    text-align:center;
     position: relative;
     top: -6.3em;
-    right: 5em;
+    left: 32.5em;
     font-size: 1.2em;
 }
 .MainP{
