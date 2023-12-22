@@ -12,6 +12,7 @@
     top: .7em;
 }
 html,body{
+    max-width: 800px;
     margin: 0;
     padding: 0;
     background-color: #1320B0;
