@@ -5,11 +5,11 @@
 }
 .topArea{
     position: relative;
-    bottom: 1vw;
+    bottom: 1em;
 }
 .main-header{
     position: relative;
-    top: .7vw;
+    top: .7em;
 }
 html,body{
     margin: 0;
@@ -19,24 +19,26 @@ html,body{
     font-family:'Times New Roman', Times, serif;
 }
 .nav ul{
-    background-color: #0F0F0F;
     color: #fff;
 }
 .nav li{
+    z-index: 2;
     position: relative;
-    top: .1vw;
-    line-height: 2vw;
-    margin: .3vw .5vw .5vw;
-    display: inline-block;
-    float: right;
+    top: .7em;
+    left: 46em;
+    line-height: 2em;
+    margin: .4em .5em .5em;
+    display: inline;
+    text-align: right;
 }
 .nav a{
     color: #fff;
-    display: inline-block;
-    padding: .5vw;
-    margin-bottom: 2vw;
+    position: relative;
+    bottom: .2em;
+    display: inline;
+    
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 .nav a:hover, a:focus{
     /*color: gray;*/
@@ -47,37 +49,40 @@ html,body{
 }
 .linkedIn{
     position: relative;
-    bottom: -.1vw;
-    right: .1vw;
-    padding: .1vw;
-    width: 3vw;
-    height: auto;
+    bottom: -.3em;
+    right: .1em;
+    padding: .1em;
+    width: 2em;
+    /*height: auto;*/
 }
 .name{
+    z-index: 2;
     position: relative;
-    top: .5vw;
-    margin: .3vw 0vw .2vw 6.5vw;
+    top: .3em;
+    left: 2em;
     display: inline-block;
-    font-size: 2vw;
+    font-size: 2em;
     float:none;
 }
 .linkedPic{
-    margin-left: 5vw;
-    width: 13vw;
+    position: relative;
+    left: 3em;
+    bottom: 2em;
+    width: 13em;
     border-radius: 50%;
-    margin-top: 4vw;
-    height: auto;
+    margin-top: 4em;
+    /*height: auto;*/
 }
 .Caption{
-    margin-top: -12vw;
-    margin-bottom: 15vw;
-    margin-left: 20vw;
-    width: 70vw;
-    font-size: 3vw;
+    position: relative;
+    bottom: 4.5em;
+    left: 6em;
+    width: 23em;
+    font-size: 3em;
     
 }
 .picWithCap{
-    margin-top: 3vw;
+    margin-top: 3em;
 }
 .Intro{
     display: block;
@@ -85,25 +90,29 @@ html,body{
 .IntroHeader{
     text-align:center;
     position: relative;
-    top: -6.3vw;
-    right: 7vw;
-    font-size: 1.4vw;
+    top: -6.3em;
+    right: 5em;
+    font-size: 1.2em;
 }
 .MainP{
     display: block;
-    width: 40vw;
-    margin-left: 50vw;
-    margin-top: -7.9vw;
-    font-size: 1.4vw;
-    line-height: 2vw;
+    width: 30em;
+    margin-left: 40em;
+    margin-top: -7.9em;
+    font-size: 1.2em;
+    line-height: 2em;
 }
 .Line{
-    width: 10%;
-    margin-left: 25%;
+    width: 8em;
+    margin-left: 24em;
     position: relative;
-    top: -5.5vw;
+    top: -6.7em;
 }
 .blackSpace{
+    z-index: 1;
+    position: relative;
+    bottom: 1.5em;
     background-color: #0f0f0f;
-    line-height: 1.5vw;
+    line-height: 3em;
+    width: 92em;
 }
