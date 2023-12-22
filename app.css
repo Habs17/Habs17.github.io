@@ -3,22 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+.topArea{
+    position: relative;
+    bottom: 1vw;
+}
+.main-header{
+    position: relative;
+    top: .7vw;
+}
 html,body{
     margin: 0;
     padding: 0;
     background-color: #1320B0;
     color: #fff;
     font-family:'Times New Roman', Times, serif;
-    flex-direction:column;
-    display: flex;
-    height: 5vh;
 }
 .nav ul{
     background-color: #0F0F0F;
     color: #fff;
 }
 .nav li{
-    margin: .3vw .5vw 0.5vw;
+    position: relative;
+    top: .1vw;
+    line-height: 2vw;
+    margin: .3vw .5vw .5vw;
     display: inline-block;
     float: right;
 }
@@ -26,8 +34,9 @@ html,body{
     color: #fff;
     display: inline-block;
     padding: .5vw;
+    margin-bottom: 2vw;
     text-decoration: none;
-    font-size: .8vw;
+    font-size: 1.5vw;
 }
 .nav a:hover, a:focus{
     /*color: gray;*/
@@ -38,16 +47,18 @@ html,body{
 }
 .linkedIn{
     position: relative;
-    bottom: .2vw;
+    bottom: -.1vw;
     right: .1vw;
     padding: .1vw;
-    width: 1.2vw;
+    width: 3vw;
     height: auto;
 }
 .name{
+    position: relative;
+    top: .5vw;
     margin: .3vw 0vw .2vw 6.5vw;
     display: inline-block;
-    font-size: 1.5vw;
+    font-size: 2vw;
     float:none;
 }
 .linkedPic{
@@ -74,16 +85,16 @@ html,body{
 .IntroHeader{
     text-align:center;
     position: relative;
-    top: -6.2vw;
+    top: -6.3vw;
     right: 7vw;
-    font-size: 1vw;
+    font-size: 1.4vw;
 }
 .MainP{
     display: block;
     width: 40vw;
     margin-left: 50vw;
-    margin-top: -7.6vw;
-    font-size: 1vw;
+    margin-top: -7.9vw;
+    font-size: 1.4vw;
     line-height: 2vw;
 }
 .Line{
@@ -92,13 +103,7 @@ html,body{
     position: relative;
     top: -5.5vw;
 }
-footer{
-    background-color: #0F0F0F;
-    color: #0F0F0F;
-    margin-bottom: -50.2vw;
-    margin-top: auto;
-    width: 100%;
-    padding: .2vw;
-    text-align: center;
-    margin-top: auto;
+.blackSpace{
+    background-color: #0f0f0f;
+    line-height: 1.5vw;
 }
