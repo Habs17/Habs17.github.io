@@ -1,0 +1,169 @@
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* Variables */
+:root{
+    --DARK-COLOR: #333;
+    --LIGHT-COLOR: papayawhip;
+    --LIGHT-COLOR-HOVER: hsl(37, 100%, 150%);
+    --DARK-COLOR-HOVER: hsl(0, 0%, 150%);
+    --FS: clamp(.75rem,2vw,2rem);
+    --MEDIUM-FS: clamp(.75rem,2.5vw,2.5rem);
+    --GREATER-FS: clamp(1rem,3.5vw,3.2rem);
+    --HEADER-FS: clamp(1rem,3.5vw,3.2rem);
+    --HEADER-WORD-COLOR: #fff;
+}
+/* Basic Styling */
+
+body{
+    font: var(--FS) sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--LIGHT-COLOR);
+    color: var(--DARK-COLOR)
+}
+
+header,footer{
+    background-color: var(--DARK-COLOR);
+    color: var(--LIGHT-COLOR);
+    position: sticky;
+    text-align: center;
+}
+header{
+    top: 0;
+}
+footer{
+    bottom: 0;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+
+header ul{
+    margin: 1rem .5rem 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+header li{
+    display: inline;
+    font-size: var(--FS);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--HEADER-WORD-COLOR);
+}
+
+header a:hover{
+    opacity: 0.6;
+}
+
+footer ul{
+    margin: 1rem .5rem 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: min(5rem, 7vw);
+}
+
+footer .nonImage{
+    font-size: min(2rem,5vw);
+}
+footer li{
+    display: inline;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--LIGHT-COLOR);
+}
+
+footer img{
+    width: min(35px,5vw);
+    height: auto;
+}
+
+footer a:hover{
+    background-color: hsl(0, 0%, 40%)
+}
+
+footer a:hover img{
+    border: 2px solid white;
+}
+
+/* End Header and Footer Styling */
+
+h1,h2{
+    font-size: var(--HEADER-FS);
+}
+
+/* End Basic Styling */
+
+/* Start Page Specific Styling */
+
+ main .myInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px double var(--DARK-COLOR);
+    width: min(100%,1000px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+main .contactMe{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%,1000px);
+    border: 5px double var(--DARK-COLOR);
+    flex-grow: 1;
+    border-radius: 15px;
+}
+
+main .contactInfo{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+main .forms{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+input,textarea,select,button{
+    font-size: var(--FS);
+}
+
+label{
+    display: block;
+}
+
+textarea{
+    padding: 10px;
+    max-width: 100%;
+}
