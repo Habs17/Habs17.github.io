@@ -93,12 +93,11 @@ img{
 }
 
 .name{
-    position: relative;
-    top: 0;
     margin: 1rem 0 1rem 0;
+    border: 5px var(--DARK-COLOR) double;
+    width: min(100%, 350px);
     text-align: center;
-    max-height: 4rem;
-    font-weight: bolder;
+    padding: 1rem;
 }
 
 .intro img{
