@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img{
+    display: block;
+}
+
 /* Variables */
 :root{
     --DARK-COLOR: #333;
@@ -14,8 +19,10 @@
     --MEDIUM-FS: clamp(.75rem,2.5vw,2.5rem);
     --GREATER-FS: clamp(1rem,3.5vw,3.2rem);
     --HEADER-FS: clamp(1rem,3.5vw,3.2rem);
+    --HEADER-WORD-COLOR: #fff;
 }
 /* Basic Styling */
+
 body{
     font: var(--FS) sans-serif;
     min-height: 100vh;
@@ -25,9 +32,6 @@ body{
     color: var(--DARK-COLOR)
 }
 
-h1,h2{
-    font-size: var(--HEADER-FS);
-}
 header,footer{
     background-color: var(--DARK-COLOR);
     color: var(--LIGHT-COLOR);
@@ -64,11 +68,11 @@ header li{
 
 header a{
     text-decoration: none;
-    color: var(--LIGHT-COLOR);
+    color: var(--HEADER-WORD-COLOR);
 }
 
 header a:hover{
-    color: var(--LIGHT-COLOR-HOVER);
+    opacity: 0.6;
 }
 
 footer ul{
@@ -100,12 +104,16 @@ footer a:hover{
 }
 
 footer a:hover img{
-    background-color: hsl(0, 0%, 40%)
+    border: 2px solid white;
 }
 
-img{
-    display: block;
+/* End Header and Footer Styling */
+
+h1,h2{
+    font-size: var(--HEADER-FS);
 }
+
+/* Start Page Specific Styling */
 
 .name{
     margin: 1rem 0 1rem 0;
