@@ -118,7 +118,7 @@ img{
 .intro img{
     border-radius: 50%;
     border: 5px gray double;
-    width: min(200px,15vw);
+    width: clamp(65px,18vw,200px);
     height: auto;
 }
 
@@ -143,12 +143,13 @@ img{
 
 .intro p{
     font-size: var(--GREATER-FS);
+    line-height: clamp(2rem,4vw,5rem);
 }
 
 .description p{
     font-size: var(--MEDIUM-FS);
     padding-right: 1rem;
-    line-height: 3rem;
+    line-height: clamp(2rem,4vw,5rem);
     padding-top: 1rem;
 }
 
