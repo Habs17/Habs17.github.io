@@ -166,7 +166,7 @@ main .forms .buttons{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    width: 70%;
+    width: clamp(100px,50vw,800px);
 }
 
 input,textarea,select{
