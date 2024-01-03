@@ -15,10 +15,11 @@ img{
     --LIGHT-COLOR: papayawhip;
     --LIGHT-COLOR-HOVER: hsl(37, 100%, 150%);
     --DARK-COLOR-HOVER: hsl(0, 0%, 150%);
+    --SMALL-FS: (.2rem,1vw,.2rem);
     --FS: clamp(.75rem,2vw,2rem);
     --MEDIUM-FS: clamp(.75rem,2.5vw,2.5rem);
     --GREATER-FS: clamp(1rem,3.5vw,3.2rem);
-    --HEADER-FS: clamp(1rem,3.5vw,3.2rem);
+    --HEADER-FS: clamp(1.5rem,3.5vw,3.2rem);
     --HEADER-WORD-COLOR: #fff;
 }
 /* Basic Styling */
@@ -133,11 +134,14 @@ main .contactMe{
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: min(100%,1000px);
     border: 5px double var(--DARK-COLOR);
     flex-grow: 1;
     border-radius: 15px;
+}
+
+.contactInfo p{
+    margin-top: 1rem;
 }
 
 main .contactInfo{
@@ -149,21 +153,50 @@ main .contactInfo{
 }
 
 main .forms{
+    margin-top: 3rem;
     flex-grow: 1;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2rem;
 }
 
-input,textarea,select,button{
+main .forms .buttons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+input,textarea,select{
     font-size: var(--FS);
 }
 
 label{
     display: block;
+    margin-bottom: .5rem;
 }
 
 textarea{
     padding: 10px;
-    max-width: 100%;
+    width: clamp(100px,50vw,800px);
+    height: clamp(100px,50vw,700px);
+    flex-grow: 1;
+    resize: none;
 }
+
+.contactMe h2{
+    margin-left: 2rem;
+    text-align: center;
+}
+
+button{
+    border: 3px solid var(--DARK-COLOR);
+    width: clamp(35px,15vw,140px); 
+    height: clamp(18px7.5vw,72px);
+    font-size: var(--SMALL-FS);
+    padding: clamp(.1px,2vw,1px);
+}
+
+
