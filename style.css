@@ -1,0 +1,148 @@
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Variables */
+:root{
+    --DARK-COLOR: #333;
+    --LIGHT-COLOR: papayawhip;
+    --LIGHT-COLOR-HOVER: hsl(37, 100%, 150%);
+    --DARK-COLOR-HOVER: hsl(0, 0%, 150%);
+}
+/* Basic Styling */
+body{
+    font: 1.5rem sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--LIGHT-COLOR);
+    color: var(--DARK-COLOR)
+}
+
+header,footer{
+    background-color: var(--DARK-COLOR);
+    color: var(--LIGHT-COLOR);
+    position: sticky;
+    text-align: center;
+}
+header{
+    top: 0;
+}
+footer{
+    bottom: 0;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+
+header ul{
+    margin: 1rem .5rem 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+header li{
+    display: inline;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--LIGHT-COLOR);
+}
+
+header a:hover{
+    color: var(--LIGHT-COLOR-HOVER);
+}
+
+footer ul{
+    margin: 1rem .5rem 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+footer li{
+    display: inline;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--LIGHT-COLOR);
+}
+
+footer a:hover{
+    background-color: hsl(0, 0%, 40%)
+}
+
+footer a:hover img{
+    background-color: hsl(0, 0%, 40%)
+}
+
+img{
+    display: block;
+}
+
+.name{
+    position: relative;
+    top: 0;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    max-height: 4rem;
+    font-weight: bolder;
+}
+
+.intro img{
+    border-radius: 50%;
+    border: 5px gray double;
+}
+
+.intro{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    width: min(100%,1200px);
+    background-color: var(--LIGHT-COLOR);
+    border: 5px double var(--DARK-COLOR);
+    align-items: center;
+    border-radius: 15px;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.description{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro p{
+    font-size: 3rem;
+}
+
+.description p{
+    font-size: 2rem;
+    padding-right: 1rem;
+    line-height: 3rem;
+    padding-top: 1rem;
+}
+
+.description{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: min(100%,1200px);
+    border: 5px double var(--DARK-COLOR);
+    padding-left: 1.5rem;
+    border-radius: 15px;
+}
+/* Sizing Adjustments */
