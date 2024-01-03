@@ -132,7 +132,7 @@ img{
     align-items: center;
     border-radius: 15px;
     padding: 1rem;
-    gap: min(15px,2vw);
+    gap: min(30px,2vw);
 }
 
 .description{
